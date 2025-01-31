@@ -1,7 +1,5 @@
-import { List } from './list.model';
-
 export interface Task {
-  id: number;
+  id: string;
   name: string;
-  list: List;
+  completed: boolean;
 }
