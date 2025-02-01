@@ -17,7 +17,7 @@ export class ListSelectorComponent implements OnInit {
 
   protected lists: List[] = [];
 
-  constructor(private listService: ListService) {}
+  constructor(protected listService: ListService) {}
 
   ngOnInit(): void {
     this.lists = this.listService.findAll()

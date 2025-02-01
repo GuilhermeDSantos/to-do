@@ -6,6 +6,8 @@ import {List} from '../../models/list';
 })
 export class ListService {
 
+  private _selectedList!: List;
+
   private lists: List[] = [
     { id: '1', name: 'Reminders', color: '#0883fe', icon: 'bi-list-task', taskCount: 2 },
     { id: '2', name: 'Shopping', color: '#ff453a', icon: 'bi-basket', taskCount: 3 },
@@ -19,5 +21,14 @@ export class ListService {
 
   findById(id: string): List | undefined {
     return this.lists.find(l => l.id === id)
+  }
+
+  /* Select List */
+  get selectedList(): List {
+    return this._selectedList;
+  }
+
+  set selectedList(value: List) {
+    this._selectedList = value;
   }
 }

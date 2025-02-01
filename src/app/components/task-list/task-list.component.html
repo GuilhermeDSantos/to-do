@@ -1,1 +1,6 @@
-<p>task-list works!</p>
+<div *ngIf="listService.selectedList == undefined; else elseBlock">
+  <p>Selecione uma lista</p>
+</div>
+<ng-template #elseBlock>
+  <p>Lista: {{listService.selectedList.name}}</p>
+</ng-template>
