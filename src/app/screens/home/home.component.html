@@ -1,10 +1,17 @@
 <div class="container mt-3">
-  <div class="row">
-    <div class="col-sm-12 col-md-4">
-      <app-list-selector></app-list-selector>
+    <div class="row">
+        <div class="col-md-4" [ngClass]="{ 'd-none d-md-block': listService.selectedList !== undefined }">
+            <div class="card d-none d-md-block p-3">
+                <app-list-selector></app-list-selector>
+            </div>
+            <app-list-selector class="d-md-none"></app-list-selector>
+        </div>
+
+        <div class="col-md-8" [ngClass]="{ 'd-none d-md-block': listService.selectedList === undefined }">
+            <div class="card d-none d-md-block p-3">
+                <app-task-list></app-task-list>
+            </div>
+            <app-task-list class="d-md-none"></app-task-list>
+        </div>
     </div>
-    <div class="col-md-8 d-none d-md-block">
-      <app-task-list></app-task-list>
-    </div>
-  </div>
 </div>
