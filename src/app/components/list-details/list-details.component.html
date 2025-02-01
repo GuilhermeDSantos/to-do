@@ -4,7 +4,7 @@
       <div class="icon-container text-white" [ngStyle]="{'background-color': list.color}">
         <i [class]="list.icon"></i>
       </div>
-      <span class="fs-5 fw-semibold ms-2 text-truncate"
+      <span class="fw-semibold ms-2 text-truncate"
             [ngClass]="listService.selectedList == list ? 'text-white' : 'text-dark-emphasis'">{{ list.name }}</span>
     </div>
     <div class="col-2 col-md-2 col-xl-1 d-flex justify-content-end align-items-center text-muted">
