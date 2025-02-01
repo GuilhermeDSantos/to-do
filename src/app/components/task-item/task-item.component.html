@@ -1,1 +1,19 @@
-<p>task-item works!</p>
+<div class="row ps-4 pe-4">
+  <div class="col-1 d-flex justify-content-center align-items-center" (click)="task.completed = !task.completed">
+    <input type="checkbox" [(ngModel)]="task.completed" class="form-check-input rounded-circle fs-4">
+  </div>
+  <div class="col-11">
+    <div class="row">
+      <div class="col-12">
+        <span [class.text-decoration-line-through]="task.completed" class="fs-5">{{ task.title }}</span>
+      </div>
+      <div class="col-12">
+        <span class="text-muted">MM/DD/YY, HH:MM</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-1"></div>
+  <div class="col-11">
+    <hr>
+  </div>
+</div>

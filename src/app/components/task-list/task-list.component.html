@@ -2,12 +2,19 @@
   <p>Selecione uma lista</p>
 </div>
 <ng-template #elseBlock>
-  <div class="row">
-    <div class="col-10">
-      <h2 [ngStyle]="{'color': listService.selectedList.color}">{{listService.selectedList.name}}</h2>
+  <div class="row min-vh-100 bg-white">
+    <div class="col-12">
+      <div class="row mb-4">
+        <div class="col-10 d-flex justify-content-start align-items-center">
+          <h2 class="fw-bold fs-1" [ngStyle]="{'color': listService.selectedList?.color}">{{listService.selectedList?.name}}</h2>
+        </div>
+
+        <div class="col-2 d-flex justify-content-center align-items-center">
+          <i class="fs-4 bi bi-three-dots"></i>
+        </div>
+      </div>
+
+      <app-task-item *ngFor="let task of listService.selectedList?.tasks" [task]="task"></app-task-item>
     </div>
-    <!--        <div class="col-2">-->
-    <!--          <span>{{listService.selectedList.taskCount}}</span>-->
-    <!--        </div>-->
   </div>
 </ng-template>

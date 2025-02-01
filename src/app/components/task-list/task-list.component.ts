@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import {ListService} from '../../services/list/list.service';
-import {NgIf, NgStyle} from '@angular/common';
+import {NgForOf, NgIf, NgStyle} from '@angular/common';
+import {TaskItemComponent} from '../task-item/task-item.component';
 
 @Component({
   selector: 'app-task-list',
   imports: [
     NgIf,
-    NgStyle
+    NgStyle,
+    NgForOf,
+    TaskItemComponent
   ],
   templateUrl: './task-list.component.html',
   styleUrl: './task-list.component.css'

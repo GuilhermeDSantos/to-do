@@ -1,0 +1,40 @@
+/* Oculta o checkbox padrão */
+.apple-checkbox input {
+  display: none;
+}
+
+/* Estiliza o checkbox redondo */
+.apple-checkbox label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+/* Efeito de hover */
+.apple-checkbox label:hover {
+  border-color: #999;
+}
+
+/* Quando marcado */
+.apple-checkbox input:checked + label {
+  background-color: #007aff;
+  border-color: #007aff;
+}
+
+/* Adiciona o ícone de check com animação */
+.apple-checkbox input:checked + label::after {
+  content: '✓';
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  transition: opacity 0.2s ease-in-out;
+}

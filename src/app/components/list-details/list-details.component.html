@@ -9,7 +9,7 @@
     </div>
     <div class="col-2 col-md-2 col-xl-1 d-flex justify-content-end align-items-center text-muted">
       <span class="fw-light"
-      [ngClass]="listService.selectedList == list ? 'text-white' : 'text-light-emphasis'">{{ list.taskCount }}</span>
+      [ngClass]="listService.selectedList == list ? 'text-white' : 'text-light-emphasis'">{{ list.tasks.length }}</span>
     </div>
   </div>
 </button>
