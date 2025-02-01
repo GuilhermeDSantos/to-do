@@ -1,13 +1,11 @@
 <div class="row py-2">
-  <div class="col-2 d-flex justify-content-center align-items-center">
+  <div class="col d-flex justify-content-start align-items-center flex-nowrap">
     <div class="icon-container text-white" [ngStyle]="{'background-color': list.color}">
       <i [class]="list.icon"></i>
     </div>
+    <span class="fs-5 fw-semibold text-dark-emphasis ms-2 text-truncate">{{ list.name }}</span>
   </div>
-  <div class="col d-flex align-items-center">
-    <span>{{ list.name }}</span>
-  </div>
-  <div class="col-2 d-flex justify-content-center align-items-center text-muted">
-    <span>{{ list.taskCount }}</span>
+  <div class="col-2 col-md-2 col-xl-1 d-flex justify-content-center align-items-center text-muted">
+    <span class="fw-light text-light-emphasis">{{ list.taskCount }}</span>
   </div>
 </div>
