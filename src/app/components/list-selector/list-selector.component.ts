@@ -1,11 +1,25 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ListDetailsComponent} from '../list-details/list-details.component';
+import {NgForOf} from '@angular/common';
+import {List} from '../../models/list';
+import {ListService} from '../../services/list/list.service';
 
 @Component({
   selector: 'app-list-selector',
-  imports: [],
+  imports: [
+    NgForOf,
+    ListDetailsComponent
+  ],
   templateUrl: './list-selector.component.html',
   styleUrl: './list-selector.component.css'
 })
-export class ListSelectorComponent {
+export class ListSelectorComponent implements OnInit {
 
+  protected lists: List[] = [];
+
+  constructor(private listService: ListService) {}
+
+  ngOnInit(): void {
+    this.lists = this.listService.findAll()
+  }
 }

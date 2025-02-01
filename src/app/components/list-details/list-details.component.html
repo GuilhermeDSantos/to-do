@@ -1,1 +1,13 @@
-<p>list-details works!</p>
+<div class="row py-2">
+  <div class="col-2 d-flex justify-content-center align-items-center">
+    <div class="icon-container bg-primary text-white">
+      <i class="bi bi-list-task"></i>
+    </div>
+  </div>
+  <div class="col d-flex align-items-center">
+    <span>{{ list.name }}</span>
+  </div>
+  <div class="col-2 d-flex justify-content-center align-items-center text-muted">
+    <span>{{ list.taskCount }}</span>
+  </div>
+</div>

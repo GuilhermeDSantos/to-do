@@ -1,1 +1,14 @@
-<p>list-selector works!</p>
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 class="mb-3">My Lists</h1>
+      <div class="card">
+        <div class="card-body">
+          <div *ngFor="let list of lists">
+            <app-list-details [list]="list"></app-list-details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
