@@ -1,24 +1,9 @@
 <div class="container mt-3">
     <div class="row">
-        <!-- Coluna da lista de seletores -->
         <div class="col-md-4 d-flex flex-column justify-content-between" [ngClass]="{ 'd-none d-md-block': listService.selectedList !== undefined }">
-            <div class="card mb-3">
-                <div class="card-body">
-                    <div class="row d-md-flex align-items-md-center">
-                        <div class="col-10">
-                            <span class="fs-5">Guilherme</span>
-                        </div>
-                        <div class="col-2 d-flex justify-content-center">
-                            <i class="bi bi-gear fs-5"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <app-list-selector></app-list-selector>
         </div>
 
-        <!-- Coluna das tarefas -->
         <div class="col-md-8" [ngClass]="{ 'd-none d-md-block': listService.selectedList === undefined }">
             <div class="card d-none d-md-block p-4">
                 <app-task-list></app-task-list>
