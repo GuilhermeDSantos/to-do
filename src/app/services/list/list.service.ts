@@ -15,8 +15,8 @@ export class ListService {
             color: '#0883fe',
             icon: 'bi-list-task',
             tasks: [
-                {id: '101', title: 'Buy milk', completed: false},
-                {id: '102', title: 'Call mom', completed: true}
+                {id: '101', name: 'Buy milk', description: '', completed: false},
+                {id: '102', name: 'Call mom', description: '', completed: true}
             ]
         },
         {
@@ -25,9 +25,9 @@ export class ListService {
             color: '#ff453a',
             icon: 'bi-basket',
             tasks: [
-                {id: '201', title: 'Buy eggs', completed: false},
-                {id: '202', title: 'Get bread', completed: false},
-                {id: '203', title: 'Check offers', completed: true}
+                {id: '201', name: 'Buy eggs', description: '', completed: false},
+                {id: '202', name: 'Get bread', description: '', completed: false},
+                {id: '203', name: 'Check offers', description: '', completed: true}
             ]
         },
         {
@@ -36,11 +36,11 @@ export class ListService {
             color: '#ffa00a',
             icon: 'bi-lightbulb',
             tasks: [
-                {id: '301', title: 'Write blog post', completed: false},
-                {id: '302', title: 'Research new tech', completed: true},
-                {id: '303', title: 'Sketch prototype', completed: false},
-                {id: '304', title: 'Brainstorm features', completed: true},
-                {id: '305', title: 'Outline project', completed: false}
+                {id: '301', name: 'Write blog post', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', completed: false},
+                {id: '302', name: 'Research new tech', description: '', completed: true},
+                {id: '303', name: 'Sketch prototype', description: '', completed: false},
+                {id: '304', name: 'Brainstorm features', description: '', completed: true},
+                {id: '305', name: 'Outline project', description: '', completed: false}
             ]
         },
         {
@@ -49,8 +49,8 @@ export class ListService {
             color: '#32d05b',
             icon: 'bi-laptop',
             tasks: [
-                {id: '401', title: 'Finish report', completed: false},
-                {id: '402', title: 'Reply to emails', completed: true}
+                {id: '401', name: 'Finish report', description: '', completed: false},
+                {id: '402', name: 'Reply to emails', description: '', completed: true}
             ]
         }
     ];

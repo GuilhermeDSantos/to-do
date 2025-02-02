@@ -5,7 +5,10 @@
   <div class="col-11">
     <div class="row">
       <div class="col-12">
-        <span [class.text-decoration-line-through]="task.completed" class="fs-5">{{ task.title }}</span>
+        <span [class.text-decoration-line-through]="task.completed" class="fs-5">{{ task.name }}</span>
+      </div>
+      <div class="col-12">
+        <span class="text-muted fs-6">{{ task.description }}</span>
       </div>
       <div class="col-12">
         <span class="text-muted">MM/DD/YY, HH:MM</span>
