@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.icon-container {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
+}
