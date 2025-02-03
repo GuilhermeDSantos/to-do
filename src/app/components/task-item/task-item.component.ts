@@ -1,11 +1,14 @@
 import {Component, Input} from '@angular/core';
 import {Task} from '../../models/task';
 import {FormsModule} from '@angular/forms';
+import {DatePipe, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-task-item',
   imports: [
-    FormsModule
+    FormsModule,
+    NgIf,
+    DatePipe
   ],
   templateUrl: './task-item.component.html',
   styleUrl: './task-item.component.css'

@@ -11,7 +11,9 @@
         <span class="text-muted fs-6">{{ task.description }}</span>
       </div>
       <div class="col-12">
-        <span class="text-muted">MM/DD/YY, HH:MM</span>
+        <div *ngIf="task.dueDate">
+          <span class="text-muted">{{task.dueDate | date: 'MM/dd/YY, HH:mm'}}</span>
+        </div>
       </div>
     </div>
   </div>
