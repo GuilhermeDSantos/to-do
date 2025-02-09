@@ -19,7 +19,7 @@
       <div class="col-12" *ngIf="task.linkUrl">
         <div class="bg-light p-2 ps-3 pe-3 rounded-pill d-inline-block">
           <i class="bi bi-link-45deg"></i>
-          <span class="ms-2 fs-6">https://docs.aws.amazon.com/cli/latest/reference/s3/</span>
+          <span class="ms-2 fs-6">{{ urlCleanerService.cleanUrl(task.linkUrl) }}</span>
         </div>
       </div>
     </div>
