@@ -50,7 +50,7 @@ export class ListService {
             icon: 'bi-laptop',
             tasks: [
                 {id: '401', name: 'Finish report', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', dueDate: new Date('2025-02-02T17:00:00'), completed: false},
-                {id: '402', name: 'Reply to emails', completed: true}
+                {id: '402', name: 'Reply to emails', linkUrl: 'https://docs.aws.amazon.com/cli/latest/reference/s3/', completed: true}
             ]
         }
     ];
