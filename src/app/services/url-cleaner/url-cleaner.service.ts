@@ -13,7 +13,7 @@ export class UrlCleanerService {
 
       return parsedUrl.hostname;
     } catch (error) {
-      return "";
+      return url;
     }
   }
 }
