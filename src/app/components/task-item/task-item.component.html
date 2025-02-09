@@ -17,7 +17,7 @@
       </div>
 
       <div class="col-12 mt-1" *ngIf="task.linkUrl">
-        <div class="bg-light p-2 ps-3 pe-3 rounded-pill d-inline-block">
+        <div class="btn btn-light p-2 ps-3 pe-3 d-inline-block" (click)="openLink(task)">
           <i class="bi bi-link-45deg"></i>
           <span class="ms-2 fs-6">{{ urlCleanerService.cleanUrl(task.linkUrl) }}</span>
         </div>

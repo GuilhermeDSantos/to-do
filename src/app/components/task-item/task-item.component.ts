@@ -22,4 +22,9 @@ export class TaskItemComponent {
   constructor(protected urlCleanerService: UrlCleanerService) {
   }
 
+  openLink(task: Task) {
+    if (task.linkUrl) {
+      window.open(task.linkUrl, '_blank');
+    }
+  }
 }
